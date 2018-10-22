@@ -29,24 +29,6 @@
     <!-- Custom styles for this theme -->
     <link href="css/vitality-blue.css" rel="stylesheet" type="text/css">
 	  
-	<!-- Quick JS Script to show logo after scrolling-->
-	<!--<script>
-		window.onscroll = function() {
-	  		changeLogo()
-		};
-
-	function changeLogo() {
-	  var Logo = document.getElementById("Logo")
-	  if (document.body.scrollTop > 875 || document.documentElement.scrollTop > 875) {
-		Logo.src = 'img/aturian/largewhitetext.svg';
-		Logo.style = 'height:30px; width:auto'
-	  } else {
-		Logo.src = 'img/aturian/whitecircleclean.png';
-		Logo.style= 'height:50px; width:auto';
-	  }
-	}
-	</script>-->
-	  
   </head>
 
   <body id="page-top">
@@ -94,29 +76,29 @@
 	<!-- 02 -->
 	<header class="masthead video">
 		<div class="overlay"></div>
-		<!-- 02.01 -->
+    <!-- 02.01 -->
 		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-			<source src="mp4/green.mp4" type="video/mp4">
-		</video>
+			<source src="mp4/green.webm" type="video/webm">
+            <source src="mp4/green.mp4" type="video/mp4">
+      		<source src="mp4/banner.ogv" type="video/ogg">
+	  </video>
 		<!-- 02.02 -->
 		<div class="container h-100">
 			<div class="row h-100">
 				<div class="col-12 my-auto text-center text-white">
 						<!--<img class="masthead-img img-fluid mb-3" src="img/aturian/sloganclean.png" style="height:200px; width: auto" alt=""> -->
 					<!-- <div class="masthead-title">Aturian</div> -->
-					<img src="img/aturian/SloganClean.png" style="height:200px; width: auto" alt="">
+					<div class="tagLine"><img src="img/aturian/SloganClean.png" alt=""></div>
 					<hr class="colored">
 					<div class="masthead-subtitle">Your Complete Cloud-Based Business Management Solution</div>	
 				</div>
 			</div>
 		</div>
-		<!-- 02.03 -->
+    <!-- 02.03 -->
 		<div class="scroll-down">
 			<a class="btn js-scroll-trigger" href="#about">
-				<i class="fa fa-angle-down fa-fw"></i>
-			</a>
-		</div>
-	  </header>
+				<i class="fa fa-angle-down fa-fw"></i>			</a>		</div>
+  </header>
 
   <!--------------------------- About Section --------------------------->
 	<!-- 03 -->
@@ -238,13 +220,13 @@
 					<div class="col-md-10 my-4 mx-auto">
 							<div class="row">
 									<div class="col-lg-12">
-											<div class="table-responsve">
+											<div class="table-responsve CompareAturianTable">
 											<table class="table table-striped table-hover">
 												<thead class="thead-inverse">
 													<tr>
 															<th class="w-25"></th>
 															<th class="">Aturian</th>
-															<th class="">Lakeshore</th>
+															<th class="">Lake Shore</th>
 															<th class="">Quickbooks</th>
 															<th class="">commonsku</th>
 													</tr>
@@ -354,7 +336,7 @@
 	  
 	<!-- Block Button Call to Action -->
 	<!-- 05 -->
-    <a class="btn btn-block btn-full-width" href="mailto:contactus@aturian.com">Learn How Aturian Can Help You Today</a>
+    <a class="btn btn-block btn-full-width blackBtn" href="mailto:contactus@aturian.com">Learn How Aturian Can Help You Today</a>
 	
     <!--------------------------- Team Section --------------------------->
 	<!-- 06 -->
@@ -365,7 +347,7 @@
         <p class="mb-0">Our leadership team combines its deep roots in the promotional products' industry with decades of experience building successful technology companies.</p>
         <hr class="colored">
 				<!-- Leadership -->
-        <div class="team-carousel-two owl-carousel owl-theme mx-3" data-center="true" >
+        <div class="team-carousel owl-carousel owl-theme mx-3" data-center="true" >
 
           <!-- Team Carousel Item 1 Atul-->
 					<!-- 06.02 -->
@@ -373,24 +355,19 @@
             <div class="overlay"></div>
             <img class="img-fluid" src="img/agency/team/atul400.jpg" alt="">
             <div class="team-caption">	
-							<br><br><br><br><br><br><br><br><br><br><br>
 			  			<h3>Atul Shevade, MBA</h3>
               <hr class="colored">
               <ul class="list-inline list-team-social">
                 <li class="list-inline-item">
                   <a href="mailto:atul@aturian.com">
-                    <i class="fas fa-envelope fa-fw fa-2x"></i>
+                    <i class="fas fa-envelope fa-fw fa-lg"></i>
                   </a>
                 </li>
               </ul>
 							<ul class="list-inline list-inline-item">
-								<a tabindex="0" class="btn btn-light btn-sm" style="border-radius: 12px" role="button" data-text-nowrap="false" data-toggle="popover" data-trigger="focus" title="Atul Shevade, MBA" data-html="true" data-content="
-									<div class='card' style='width:30rem;'>
-										<div class='card-body'>
-											<p class='card-text'>Prior to being the founder of Aturian, for five years, Atul served as the CTO of Corporate Imaging Concepts, LLC, a $90M distributor of promotional products.  While at Corporate Imaging, Atul developed its proprietary online ordering platform, LEIF(tm), and served on its management committee.  Prior to Corporate Imaging, Atul was a founder and CTO of iMenu360 Inc., a high frequency, online ordering portal for restaurants around the world. He was also the co-founder and general partner of Ordernetwork, LLC. In addition, he also served as a Senior Management Consultant at Ernst & Young. Atul holds an MBA from the University of Chicago, a Master’s Degree in Computer Science, as well as a bachelor’s degree in Computer Engineering from S.G.S. Institute of Technology & Science.</p>
-										</div>
-									</div>">Read Bio
-								</a>
+								<a href="#atulBio" data-toggle="modal" class="btn btn-primary btn-sm" style="border-radius: 12px">
+									Read Bio
+                </a>
 							</ul>
             </div>
           </div>
@@ -401,31 +378,26 @@
             <div class="overlay"></div>
             <img class="img-fluid" src="img/agency/team/brian400-two.jpg" alt="">
             <div class="team-caption">
-							<br><br><br><br><br><br><br><br><br><br><br>
+	
               <h3>Brian Abrams, Esq., CPA</h3>
               <hr class="colored">
               <ul class="list-inline list-team-social">
                 <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fas fa-envelope fa-fw fa-2x"></i>
+                  <a href="mailto:brian@aturian.com">
+                    <i class="fas fa-envelope fa-fw fa-lg"></i>
                   </a>
+									<a href="#brianBio" data-toggle="modal" style="border-radius: 12px">
+										<i class="fal fa-info-circle fa-fw fa-lg"></i>
+                </a>
                 </li>
               </ul>
-							<ul class="list-inline list-inline-item">
-								<a tabindex="0" class="btn btn-light btn-sm" style="border-radius: 12px" role="button" data-text-nowrap="false" data-toggle="popover" data-trigger="focus" title="Atul Shevade, MBA" data-html="true" data-content="
-									<div class='card' style='width:30rem;'>
-										<div class='card-body'>
-											<p class='card-text'>Brian is the founder and until 2017 served as CEO and Board Chair of Corporate Imaging Concepts, LLC, a tech-enabled, promotional products distributor. Under his leadership, Corporate Imaging grew from a one person start-up to a top 40 ranking in sales. In 2016, ASI recognized Brian as the industry’s Distributor Entrepreneur of the Year. That same year, Berkley Capital, a NY based private equity firm, purchased a majority interest in the company. In addition to Corporate Imaging, Brian and his wife, Patty, are the founders of Beacon Academy, an International Baccalaureate high school in Evanston, IL - the first Montessori high school in Illinois where Brian served as Board Chair.  Currently, Brian serves on the Advisory Board of a Boston-based private equity firm, Fort Point Capital, is a Board Member for a Michigan-based private equity backed, experiential marketing agency, EventLink, and a venture capital backed, technology enabled rewards business, Rewards21.  Brian also currently serves on the Board of and is a guest lecturer at the Baumhart Center at Loyola University, supporting social entrepreneurs.  A CPA and graduate of the University of Illinois with a BS in Accountancy (BS and CPA ’90) and the University of Michigan Law School (JD ’93), previously Brian was an attorney with Schiff Hardin and Fox Swibel Levin & Carroll.</p>
-										</div>
-									</div>">Read Bio
-								</a>
-							</ul>
+					
             </div>
 					</div>
         </div>
 				
 				<!-- Supplier Board -->
-				<div class="container text-center wow fadeIn">
+				<div class="container supplier-advisory-board text-center wow fadeIn">
 				<!-- 06.03 -->
         <h2>Supplier Advisory Board</h2>
         <!-- <p class="mb-0"></p> -->
@@ -437,13 +409,12 @@
 							<div class="overlay"></div>
 							<img class="img-fluid" src="img/agency/team/ira400.jpeg" alt="">
 							<div class="team-caption">
-								<br><br><br><br><br><br><br><br><br><br>
 								<h3>Ira Neaman</h3>
 								<hr class="colored">
 								<p>CEO, Vantage Apparel</p>
 								<ul class="list-inline list-team-social">
 									<li class="list-inline-item">
-										<a href="https://vantageapparel.com/" target="_blank">
+										<a href="https://vantageapparel.com/">
 											<i class="far fa-external-link fa-fw fa-lg"></i>
 										</a>
 									</li>
@@ -457,13 +428,12 @@
 							<div class="overlay"></div>
 							<img class="img-fluid" src="img/agency/team/tom400.jpeg" alt="">
 							<div class="team-caption">
-								<br><br><br><br><br><br><br><br><br><br>
 								<h3>Thomas Riordan</h3>
 								<hr class="colored">
 								<p>President, Maple Ridge Farms</p>
 								<ul class="list-inline list-team-social">
 									<li class="list-inline-item">
-										<a href="https://mapleridge.com/" target="_blank">
+										<a href="https://mapleridge.com/">
 											<i class="far fa-external-link fa-fw fa-lg"></i>
 										</a>
 									</li>
@@ -476,7 +446,6 @@
 							<div class="overlay"></div>
 							<img class="img-fluid" src="img/agency/team/blank.jpg" alt="">
 							<div class="team-caption">
-								<br><br><br><br><br><br><br><br><br><br>
 								<h3>TBA</h3>
 								<hr class="colored">
 								<p></p>
@@ -489,13 +458,11 @@
 								</ul>
 							</div>
 						</div>
-						
-						
 					</div>
       	</div>
 				
 				<!-- Distributor Advisory Board -->
-				<div class="container text-center wow fadeIn">
+				<div class="container distributor-advisory-board text-center wow fadeIn">
 				<!-- 06.03 -->
         <h2>Distributor Advisory Board</h2>
         <!-- <p class="mb-0"></p> -->
@@ -507,7 +474,7 @@
 							<div class="overlay"></div>
 							<img class="img-fluid" src="img/agency/team/jan.jpeg" alt="">
 							<div class="team-caption">
-								<br><br><br><br><br><br><br><br><br><br>
+			
 								<h3>Jan Nathanson</h3>
 								<hr class="colored">
 								<p>President, Imagination Branding</p>
@@ -527,7 +494,7 @@
 							<div class="overlay"></div>
 							<img class="img-fluid" src="img/agency/team/lakeshore200.png" alt="">
 							<div class="team-caption">
-								<br><br><br><br><br><br><br><br><br><br>
+		
 								<h3>Kaye Keady</h3>
 								<hr class="colored">
 								<p>CEO, Lakeshore Group</p>
@@ -546,7 +513,7 @@
 							<div class="overlay"></div>
 							<img class="img-fluid" src="img/agency/team/blank.jpg" alt="">
 							<div class="team-caption">
-								<br><br><br><br><br><br><br><br><br><br>
+				
 								<h3>TBA</h3>
 								<hr class="colored">
 								<p></p>
@@ -944,38 +911,6 @@
       </div>
     </section>
 
-	<!-- Newsletter Signup Call to Action -->
-	<!-- 13 -->
-    <section class="page-section signup-form bg-inverse text-white">
-      <div class="container text-center">
-				<!-- 13.01 -->
-        <h3 class="m0">Subscribe to our newsletter!</h3>
-        <hr class="colored">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <!-- MailChimp Signup Form -->
-						<!-- 13.02 -->
-            <div id="mc_embed_signup">
-              <!-- Replace the form action in the line below with your MailChimp embed action! Visit the documentation for additional instructions! -->
-              <form role="form" action="https://aturian.us19.list-manage.com/subscribe/post?u=c5d459cb7c10aabc408d99c04&amp;id=944c0c8679" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-                <div class="input-group input-group-lg">
-                  <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
-                  <span class="input-group-btn">
-                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe!</button>
-                  </span>
-                </div>
-                <div id="mce-responses">
-                  <div class="response" id="mce-error-response" style="display:none"></div>
-                  <div class="response" id="mce-success-response" style="display:none"></div>
-                </div>
-              </form>
-            </div>
-            <!-- End MailChimp Signup Form -->
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
 	<!-- 14 -->
     <footer class="footer" style="background-image: url('img/agency/backgrounds/bg-footer.jpg')">
@@ -1022,7 +957,7 @@
               <i class="fal fa-envelope"></i>
               Email</h4>
             <p>
-              <a href="mailto:tristen@aturian.com">contactus@aturian.com</a>
+              <a href="mailto:contactus@aturian.com">contactus@aturian.com</a>
             </p>
           </div>
         </div>
@@ -1154,7 +1089,7 @@
                           <div class="item">
                             <img src="img/agency/portfolio/carousel/acct_ap.PNG" class="img-fluid" alt="">
                           </div>
-						  <div class="item">
+						  						<div class="item">
                             <img src="img/agency/portfolio/carousel/acct_inv.PNG" class="img-fluid" alt="">
                           </div>
                         </div>
@@ -1211,10 +1146,10 @@
                           <div class="item">
                             <img src="img/agency/portfolio/carousel/reports_vendors.PNG" class="img-fluid" alt="">
                           </div>
-						  <div class="item">
+						  						<div class="item">
                             <img src="img/agency/portfolio/carousel/reports_ordertracking.PNG" class="img-fluid" alt="">
                           </div>
-						  <div class="item">
+						  						<div class="item">
                             <img src="img/agency/portfolio/carousel/reports_accts.PNG" class="img-fluid" alt="">
                           </div>
                         </div>
@@ -1321,7 +1256,7 @@
       </div>
     </div>
 	
-	<!-- Example Modal 5: Corresponds with Portfolio Carousel Item 6 Customer and Vendor Management -->
+	<!-- Example Modal 6 Corresponds with Portfolio Carousel Item 6 Customer and Vendor Management -->
 	<!-- 15f -->
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/agency/portfolio/carousel/bg_purple.png')">
       <div class="modal-dialog">
@@ -1390,6 +1325,46 @@
       </div>
     </div>
 	
+		<!-- Atul Bio Modal -->
+		<div class="modal fade" id="atulBio" tabindex="-1" role="dialog" aria-labelledby="atulModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="atulModalLabel">Atul Shevade, MBA</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Prior to being the founder of Aturian, for five years, Atul served as the CTO of Corporate Imaging Concepts, LLC, a $90M distributor of promotional products.  While at Corporate Imaging, Atul developed its proprietary online ordering platform, LEIF(tm), and served on its management committee.  Prior to Corporate Imaging, Atul was a founder and CTO of iMenu360 Inc., a high frequency, online ordering portal for restaurants around the world. He was also the co-founder and general partner of Ordernetwork, LLC. In addition, he also served as a Senior Management Consultant at Ernst &amp; Young. Atul holds an MBA from the University of Chicago, a Master’s Degree in Computer Science, as well as a bachelor’s degree in Computer Engineering from S.G.S. Institute of Technology &amp; Science.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Brian Bio Modal -->
+		<div class="modal fade" id="brianBio" tabindex="-1" role="dialog" aria-labelledby="brianModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="brianModalLabel">Brian Abrams, Esq., CPA</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Brian is the founder and until 2017 served as CEO and Board Chair of Corporate Imaging Concepts, LLC, a tech-enabled, promotional products distributor. Under his leadership, Corporate Imaging grew from a one person start-up to a top 40 ranking in sales. In 2016, ASI recognized Brian as the industry’s Distributor Entrepreneur of the Year. That same year, Berkley Capital, a NY based private equity firm, purchased a majority interest in the company. In addition to Corporate Imaging, Brian and his wife, Patty, are the founders of Beacon Academy, an International Baccalaureate high school in Evanston, IL - the first Montessori high school in Illinois where Brian served as Board Chair.  Currently, Brian serves on the Advisory Board of a Boston-based private equity firm, Fort Point Capital, is a Board Member for a Michigan-based private equity backed, experiential marketing agency, EventLink, and a venture capital backed, technology enabled rewards business, Rewards21.  Brian also currently serves on the Board of and is a guest lecturer at the Baumhart Center at Loyola University, supporting social entrepreneurs.  A CPA and graduate of the University of Illinois with a BS in Accountancy (BS and CPA ’90) and the University of Michigan Law School (JD ’93), previously Brian was an attorney with Schiff Hardin and Fox Swibel Levin &amp; Carroll.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

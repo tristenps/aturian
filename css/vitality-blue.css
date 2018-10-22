@@ -314,9 +314,7 @@ header.video video {
   header.video {
     background: url("../img/agency/backgrounds/bg-mobile-fallback.jpg") #222 no-repeat center center scroll;
   }
-  header.video video {
-    display: none;
-  }
+
 }
 
 .team-carousel .item {
@@ -396,7 +394,7 @@ header.video video {
 .team-carousel-two .item .team-caption {
   position: absolute;
   z-index: 2;
-  top: 50%;
+  top:82%;
   left: 50%;
   width: 100%;
   margin: auto;
@@ -1118,7 +1116,7 @@ a.text-primary:focus, a.text-primary:hover {
 }
 
 table { border-collapse:collapse; table-layout:fixed; width:100%; }
-th { background:#F5F5F5; display:none; }
+th { background:#F5F5F5;}
 td, th {
   height:53px
 }
@@ -1126,10 +1124,10 @@ td,th { border:1px solid #DDD; padding:10px; empty-cells:show; }
 td,th {
   text-align:left;
 }
-td+td, th+th {
+/*td+td, th+th {
   text-align:center;
   display:none;
-}
+}*/
 td.default {
   display:table-cell;
 }
@@ -1163,6 +1161,7 @@ td.default {
   td+td, th+th {
     width: auto;
   }
+
 }
 /* The max width is dependant on the container (more info below) */
 .popover{
@@ -1180,4 +1179,257 @@ span-color {
 }
 
 
+/* ============================ New CSS ============================ */ 
 
+.tagLine img {
+	width:55%;
+}
+.table-responsve.CompareAturianTable {
+	width: 100%;
+    overflow-x: auto;
+}
+.table-responsve.CompareAturianTable .table {
+	margin:0;
+}
+
+@media only screen and (max-width: 768px) {
+footer.footer .footer-contact-details {
+	margin:75px auto;
+}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+.tagLine img {
+	width:100%;
+}
+section.page-section {
+	padding:30px 0;
+}
+.CompareAturianTable table {
+	table-layout:auto;
+}
+.btn-full-width.blackBtn {
+	padding:30px 20px;
+	text-align:center;
+	font-size:20px;
+}
+.owl-carousel.team-carousel-two {
+	margin:0 !important;
+}
+.team-carousel-two .item {
+	margin:0;
+}
+.owl-carousel.team-carousel-two.owl-theme .owl-controls .owl-prev {
+	left:0;
+	top:0;
+}
+.owl-carousel.team-carousel-two.owl-theme .owl-controls .owl-next {
+	right:0;
+	top:0;
+}
+.owl-carousel.team-carousel.owl-theme .owl-controls .owl-prev {
+	left:0;
+}
+.owl-carousel.team-carousel.owl-theme .owl-controls .owl-next {
+	right:0;
+}
+.team-carousel-two .item .team-caption {
+	top:79%;
+}
+.team-carousel {
+	margin:0 !important;
+}
+.team-carousel .item {
+	margin:0;
+}
+.container.supplier-advisory-board {
+	padding:0;
+}
+.container.distributor-advisory-board {
+	padding:0;
+}
+.container.distributor-advisory-board h2 {
+	margin:15px 0 0 0;
+}
+.table-responsve.CompareAturianTable {
+	border:solid 1px #dee2e6;
+}
+.table-responsve.CompareAturianTable table tr td:first-child, .table-responsve.CompareAturianTable table tr td:last-child, .table-responsve.CompareAturianTable table tr th:first-child, .table-responsve.CompareAturianTable table tr th:last-child {
+	border-left:0;
+	border-right:0;
+}
+.table-responsve.CompareAturianTable table tr:first-child td, .table-responsve.CompareAturianTable table tr:first-child th {
+	border-top:0;
+}
+.table-responsve.CompareAturianTable table tr:last-child td {
+	border-bottom:0;
+}
+header.masthead .masthead-subtitle {
+	font-size:1.2rem;
+}
+.h2, h2 {
+    font-size: 1.6rem;
+}
+.h3, h3 {
+    font-size: 1.3rem;
+}
+p {
+    font-size:16px;
+}
+.table-responsve.CompareAturianTable {
+	font-size:0.95rem;
+}
+.table-responsve.CompareAturianTable .fa-lg {
+	font-size:1em;
+}
+.team-carousel-two .item .overlay {
+	background:#000000;
+	opacity:0.3;
+	height:96%;
+}
+.team-carousel-two .item .team-caption h3 {
+	font-size:1.3rem;
+}
+.team-carousel .item .team-caption {
+	top:81%;
+}
+.call-to-action span.quote {
+	font-size:22px;
+}
+.portfolio-carousel .item .project-details .project-name {
+	font-size:30px;
+}
+p.lead {
+	font-size:21px;
+}
+.floating-label-form-group input, .floating-label-form-group textarea {
+	font-size:1em;
+}
+footer.footer p {
+	font-size:18px;
+}
+.table-responsve.CompareAturianTable td, .table-responsve.CompareAturianTable th {
+	padding:.50rem;
+}
+}
+
+@media only screen and (max-width: 320px) {
+.tagLine img {
+	width:100%;
+}
+section.page-section {
+	padding:30px 0;
+}
+.CompareAturianTable table {
+	table-layout:auto;
+}
+.btn-full-width.blackBtn {
+	padding:20px 20px;
+	text-align:center;
+	font-size:16px;
+}
+.owl-carousel.team-carousel-two {
+	margin:0 !important;
+}
+.team-carousel-two .item {
+	margin:0;
+}
+.owl-carousel.team-carousel-two.owl-theme .owl-controls .owl-next {
+	right:0;
+	top:-120px;
+}
+.owl-carousel.team-carousel-two.owl-theme .owl-controls .owl-prev {
+	left:0;
+	top:-120px;
+}
+.owl-carousel.team-carousel.owl-theme .owl-controls .owl-prev {
+	left:0;
+	
+}
+.owl-carousel.team-carousel.owl-theme .owl-controls .owl-prev {
+	left:0;
+}
+.owl-carousel.team-carousel.owl-theme .owl-controls .owl-next {
+	right:0;
+}
+.team-carousel-two .item .team-caption {
+	top:56%;
+}
+.team-carousel {
+	margin:0 !important;
+}
+.team-carousel .item {
+	margin:0;
+}
+.container.supplier-advisory-board {
+	padding:0;
+	margin:-80px 0 0 0;
+}
+.container.distributor-advisory-board {
+	padding:0;
+}
+.container.distributor-advisory-board h2 {
+	margin:15px 0 0 0;
+}
+.table-responsve.CompareAturianTable {
+	border:solid 1px #dee2e6;
+}
+.table-responsve.CompareAturianTable table tr td:first-child, .table-responsve.CompareAturianTable table tr td:last-child, .table-responsve.CompareAturianTable table tr th:first-child, .table-responsve.CompareAturianTable table tr th:last-child {
+	border-left:0;
+	border-right:0;
+}
+.table-responsve.CompareAturianTable table tr:first-child td, .table-responsve.CompareAturianTable table tr:first-child th {
+	border-top:0;
+}
+
+header.masthead .masthead-subtitle {
+	font-size:1.2rem;
+}
+.h2, h2 {
+    font-size: 1.6rem;
+}
+.h3, h3 {
+    font-size: 1.3rem;
+}
+p {
+    font-size:16px;
+}
+.table-responsve.CompareAturianTable {
+	font-size:0.95rem;
+}
+.table-responsve.CompareAturianTable .fa-lg {
+	font-size:1em;
+}
+.team-carousel-two .item .overlay {
+	background:#000000;
+	opacity:0.3;
+	height:73%;
+}
+.team-carousel-two .item .team-caption h3 {
+	font-size:1rem;
+}
+.team-carousel .item .team-caption {
+	top:81%;
+}
+.call-to-action span.quote {
+	font-size:22px;
+}
+.portfolio-carousel .item .project-details .project-name {
+	font-size:30px;
+}
+p.lead {
+	font-size:21px;
+}
+.floating-label-form-group input, .floating-label-form-group textarea {
+	font-size:1em;
+}
+footer.footer p {
+	font-size:18px;
+}
+.navbar-brand {
+	margin:0;
+}
+.table-responsve.CompareAturianTable td, .table-responsve.CompareAturianTable th {
+	padding:.50rem;
+}
+}
